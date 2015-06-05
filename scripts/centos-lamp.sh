@@ -21,6 +21,6 @@ chkconfig mysqld on
 service mysqld start
 # Download Starter Content
 cd /vagrant
-sudo -u vagrant wget -q https://raw.githubusercontent.com/aberthet/vagrant/01dbb637467134ec1be3d4140c63bbab6330e688/files/index.php
+sudo -u vagrant wget -q https://raw.githubusercontent.com/aberthet/vagrant/master/files/index.php
 
 service httpd restart
