@@ -1,4 +1,4 @@
-#!bin/bash
+#!/bin/bash
 
 # Update CentOS
 yum update -y --exclude=kernel
@@ -10,8 +10,8 @@ chkconfig -add httpd
 chkconfig httpd on
 service httpd stop
 rm -rf /var/www/html
-ln -s /vagrant /var/www/html
-service httpd start
+ln -fs /vagrant /var/www/html
+service httpd starti
 # PHP
 yum install -y php php-cli php-common php-devel php-mysql
 # MySQL
