@@ -19,5 +19,8 @@ yum install -y mysql mysql-server mysql-devel
 chkconfig --add mysqld
 chkconfig mysqld on
 service mysqld start
+# Download Starter Content
+cd /vagrant
+sudo -u vagrant wget -q https://raw.githubusercontent.com/aberthet/vagrant/01dbb637467134ec1be3d4140c63bbab6330e688/files/index.php
 
 service httpd restart
